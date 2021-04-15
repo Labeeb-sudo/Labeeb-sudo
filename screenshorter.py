@@ -1,14 +1,9 @@
-from PIL import Image, ImageGrab
+import pyautogui
 import time
-import os
 
 def takeScreenshot():
-    image = ImageGrab.grab()
-    image.show()
-    # image.save("Screenshort.jpg")
-    image.save("wpm=45")
-if __name__ == '__main__':
-    # you can set the timer as your wish
-    time.sleep(2) 
     
-    takeScreenshot()
+    img = pyautogui.screenshot()
+    time.sleep(2)
+    # Apne hisaab se Location daalna aur apne hisaab se naam bhi rakhna
+    img.save(r'C:\\Users\\alhaq\\Desktop\\FALTU PYTHON\\ScreenShort using PYTHON\\3rdScreenshot.jpg')
